@@ -1,0 +1,120 @@
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.Android.dll.config
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.Android.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.Android.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.Android.apk
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.Android-Signed.apk
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/FormsViewGroup.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Newtonsoft.Json.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/System.Net.Http.Extensions.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/System.Net.Http.Primitives.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.Design.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v4.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.Android.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.dll.config
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/FormsViewGroup.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/FormsViewGroup.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Newtonsoft.Json.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/System.Net.Http.Extensions.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/System.Net.Http.Primitives.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/Church.Android.csprojResolveAssemblyReference.cache
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/Church.Android.csproj.CoreCompileInputs.cache
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/Church.Android.dll
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/Church.Android.pdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/bin/Church.Android.apk
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/drawable/icon.png
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/drawable-hdpi/icon.png
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/drawable-xhdpi/icon.png
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/drawable-xxhdpi/icon.png
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/layout/tabbar.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/layout/toolbar.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/res/values/styles.xml
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/R.cs.flag
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/uploadflags.txt
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/bin/Debug/Church.Android.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/assets/Church.Android.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/assets/Church.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/assets/FormsViewGroup.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/assets/Xamarin.Forms.Core.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/assets/Xamarin.Forms.Platform.Android.dll.mdb
+C:/Users/v-udaugu/Documents/Visual Studio 2017/Projects/Church/Church/Church.Android/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.Android.dll.config
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.Android.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.Android.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.Android.apk
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.Android-Signed.apk
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/FormsViewGroup.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Newtonsoft.Json.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/System.Net.Http.Extensions.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/System.Net.Http.Primitives.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.Design.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.Android.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Church.dll.config
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/FormsViewGroup.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/FormsViewGroup.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Newtonsoft.Json.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/System.Net.Http.Extensions.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/System.Net.Http.Primitives.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Core.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/Church.Android.csprojResolveAssemblyReference.cache
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/Church.Android.csproj.CoreCompileInputs.cache
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/Church.Android.dll
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/Church.Android.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/android/bin/Church.Android.apk
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/drawable/icon.png
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/drawable-hdpi/icon.png
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/layout/tabbar.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/layout/toolbar.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/res/values/styles.xml
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/R.cs.flag
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/R.txt
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/uploadflags.txt
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/bin/Debug/Mono.Android.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/Church.Android.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/Church.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/Mono.Android.pdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/FormsViewGroup.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/Xamarin.Forms.Core.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb
+/Users/udayaugustin/Projects/Church 2/Church/Church.Android/obj/Debug/linksrc/Xamarin.Forms.Xaml.dll.mdb

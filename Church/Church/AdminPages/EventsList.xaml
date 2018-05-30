@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church.EventsList"
+             x:Name="EventListPage"
+             Title="Manage Events">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Event" Order="Secondary" Command="{Binding AddCommand}"/>
+        <ToolbarItem Text="Home" Order="Secondary" Command="{Binding NavigateToHome}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding EventList}" x:Name="listView" 
+                      SeparatorVisibility="Default" 
+                      Style="{StaticResource listView}"
+                      ItemSelected="listView_ItemSelected"
+                      HasUnevenRows="True"                      
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Edit" 
+                                          Command="{Binding Path=BindingContext.EditCommand, Source={x:Reference Name=EventListPage}}" 
+                                          CommandParameter="{Binding .}"/>
+                                <MenuItem Text="Delete" IsDestructive="True" 
+                                          Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference Name=EventListPage}}"
+                                          CommandParameter="{Binding .}"/>
+                            </ViewCell.ContextActions>
+                            <StackLayout>
+                                <StackLayout Padding="10">
+                                    <Label Text="{Binding EventName}" Style="{StaticResource eventTitle}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding StartDate, StringFormat='Date: {0:dd/MM/yyyy}'}" HorizontalOptions="Start" Style="{StaticResource bodyText}"/>
+                                        <Label Text="{Binding EventTime, StringFormat='Time: {0:dd/MM/yyyy}'}" HorizontalOptions="EndAndExpand" Style="{StaticResource bodyText}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <!--<StackLayout HeightRequest="1" BackgroundColor="Gray"/>-->
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

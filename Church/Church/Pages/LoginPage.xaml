@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Church"
+             x:Class="Church.LoginPage"
+             Title="Login"
+             >
+    <StackLayout VerticalOptions="Center" IsVisible="{Binding IsLoginPageVisible}">
+        <Label Text="Username or Password is incorrect." TextColor="Red" IsVisible="{Binding IsErrorLabelVisible}" x:Name="ErrorLabel"/>
+        <Entry x:Name="UserName" Placeholder="Username" Text="{Binding User.UserName}"/>
+        <Entry x:Name="Password" Placeholder="Password" Text="{Binding User.Password}" IsPassword="True"/>
+        <Button Text="Login" Command="{Binding SubmitLogin}"/>
+    </StackLayout>
+</ContentPage>
