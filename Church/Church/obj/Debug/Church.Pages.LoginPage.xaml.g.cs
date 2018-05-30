@@ -11,7 +11,7 @@
 namespace Church {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/udayaugustin/Projects/Church 2/Church/Church/Pages/LoginPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/udayaugustin/Projects/Church/Church/Church/Pages/LoginPage.xaml")]
     public partial class LoginPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

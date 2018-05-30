@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Church"
              x:Class="Church.StartPage">
     <local:EventsPage Title="Events"/>
-    <local:YoutubeViewPage Title="Videos"/>
+    <local:VideoPage Title="Videos"/>
     <local:LoginPage Title="Admin"/>
 </TabbedPage>

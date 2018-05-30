@@ -1,32 +1,18 @@
 ﻿<Properties StartupConfiguration="{13B32BD3-CF1F-4FB6-B558-E84FAD48554F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Church/Church/ViewModels/YoutubeViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Church Status">
     <Files>
-      <File FileName="Church/Church/ViewModels/YoutubeViewModel.cs" Line="16" Column="3" />
-      <File FileName="Church/Church/Views/YoutubeViewPage.cs" Line="2" Column="27" />
-      <File FileName="Church/Church/Pages/StartPage.xaml" Line="9" Column="14" />
+      <File FileName="Church/Church/ViewModel/YoutubeViewModel.cs" Line="1" Column="1" />
+      <File FileName="Church/Church/Views/YoutubeViewPage.cs" Line="1" Column="21" />
+      <File FileName="Church/Church/Pages/StartPage.xaml" Line="7" Column="21" />
       <File FileName="Church/Church/Pages/AdminPage.xaml" Line="10" Column="15" />
+      <File FileName="Church/Church/Pages/VideoPage.xaml" Line="11" Column="27" />
+      <File FileName="Church/Church/Pages/VideoPage.xaml.cs" Line="18" Column="59" />
+      <File FileName="Church/Church/Pages/StartPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Church/Church/Pages/PlayVideoPage.xaml" Line="7" Column="15" />
+      <File FileName="Church/Church/Pages/PlayVideoPage.xaml.cs" Line="4" Column="17" />
+      <File FileName="Church/Church/Model/YoutubeItem.cs" Line="19" Column="3" />
+      <File FileName="Church Status" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Church" expanded="True">
-            <Node name="Church" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="AdminPages" expanded="True" />
-              <Node name="AdminViewModel" expanded="True" />
-              <Node name="Interface" expanded="True" />
-              <Node name="Model" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="YoutubeViewModel.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True" />
-            </Node>
-            <Node name="Church.Android" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

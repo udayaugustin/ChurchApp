@@ -11,7 +11,7 @@
 namespace Church {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/udayaugustin/Projects/Church 2/Church/Church/App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/udayaugustin/Projects/Church/Church/Church/App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

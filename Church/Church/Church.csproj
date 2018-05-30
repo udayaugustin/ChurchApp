@@ -52,8 +52,8 @@
     <Compile Include="Pages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AudioPage.xaml.cs">
-      <DependentUpon>AudioPage.xaml</DependentUpon>
+    <Compile Include="Pages\VideoPage.xaml.cs">
+      <DependentUpon>VideoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EventDetailPage.xaml.cs">
       <DependentUpon>EventDetailPage.xaml</DependentUpon>
@@ -79,9 +79,11 @@
     <Compile Include="ViewModel\EventsViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="Service\PageService.cs" />
-    <Compile Include="Views\YoutubeViewPage.cs" />
-    <Compile Include="ViewModels\YoutubeViewModel.cs" />
-    <Compile Include="Models\YoutubeItem.cs" />
+    <Compile Include="Pages\PlayVideoPage.xaml.cs">
+      <DependentUpon>PlayVideoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\YoutubeViewModel.cs" />
+    <Compile Include="Model\YoutubeItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\LoginPage.xaml">
@@ -89,6 +91,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\PlayVideoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -156,7 +162,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AudioPage.xaml">
+    <EmbeddedResource Include="Pages\VideoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
