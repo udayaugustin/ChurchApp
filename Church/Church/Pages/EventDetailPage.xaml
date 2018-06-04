@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Church.EventDetailPage">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource pageStyle}">
-            <Label Text="{Binding EventItem.EventName}" Style="{StaticResource eventTitle}"/>
+            <Label Text="{Binding EventItem.EventName}" Style="{StaticResource eventTitle}" FontAttributes="Bold"/>
             <StackLayout Orientation="Horizontal">
                 <Label Text="{Binding EventItem.StartDate, StringFormat='Start Date: {0:dd/MM/yyyy}'}" Style="{StaticResource bodyText}" />
                 <Label Text="{Binding EventItem.EndDate, StringFormat='End Date: {0:dd/MM/yyyy}'}" HorizontalOptions="EndAndExpand" Style="{StaticResource bodyText}" />

@@ -44,7 +44,7 @@
                                 <Label Text = "{Binding Title}"
                      TextColor="Black"
                      FontSize="18" FontAttributes="Bold"/>
-                                <Image Source = "{Binding HighThumbnailUrl}" HorizontalOptions="Fill"
+                                <Image Source = "{Binding HighThumbnailUrl}" HorizontalOptions="Fill" Aspect="Fill"
                      />
                                 <Label Text = "{Binding Description}" TextColor="Gray" IsVisible="False"
                      FontSize="14"/>

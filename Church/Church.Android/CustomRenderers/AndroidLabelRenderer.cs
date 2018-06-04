@@ -22,27 +22,21 @@ namespace Church.Droid.CustomRenderers
         protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
         {
             base.OnElementChanged(e);
-            SetFont();
+            
         }
 
-        private void SetFont()
-        {
-            var nativeControl = (TextView)Control;
-            if (nativeControl != null && Element != null)
-            {
-                Typeface tf = Typeface.CreateFromAsset(Context.Assets, "ProximaNovaRegular.ttf");
-
-                nativeControl.SetTypeface(tf, TypefaceStyle.Normal);
-            }
-        }
-
+              
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
 
             if ((e.PropertyName == Label.FontFamilyProperty.PropertyName) || (e.PropertyName == Label.FontProperty.PropertyName))
             {
-                SetFont();
+				Typeface tf = Typeface.CreateFromAsset(Context.Assets, "ProximaNovaRegular.ttf");
+				if(Control != null)
+				{
+					Control.SetTypeface(tf, TypefaceStyle.Normal);
+				}
             }
         }
     }

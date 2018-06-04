@@ -18,7 +18,7 @@ namespace Church
 
         // doc : https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.videos.list 
         private string apiUrlForChannel = "https://www.googleapis.com/youtube/v3/search?part=id&maxResults=20&channelId="
-            + "UCCYR9GpcE3skVnyMU8Wx1kQ"
+			+ "UCIrr6S1t_fAIfTlLnVDyNnA"
             //+ "Your_ChannelId"
             + "&key="
             + ApiKey;
