@@ -31,6 +31,8 @@ bld/
 #wwwroot/
 
 *.DS_Store
+*.pdb
+*.dll
 =======
 =======
 [Ll]og/
