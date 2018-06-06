@@ -7,12 +7,12 @@ namespace Church
     {        
         public async Task PushAsync(Page page)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(page);
+			await (Application.Current as App).NavigationPage.Navigation.PushAsync(page);
         }        
 
         public async Task PopAsync()
         {
-            await Application.Current.MainPage.Navigation.PopAsync();
+			await (Application.Current as App).NavigationPage.Navigation.PopAsync();
         }
     }
 }

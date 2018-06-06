@@ -9,11 +9,20 @@ namespace Church
 {
     public partial class App : Application
     {
+		public NavigationPage NavigationPage { get; private set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new StartPage());
+			var menuPage = new MenuPage();
+			NavigationPage = new NavigationPage(new EventsPage());
+            
+			var rootPage = new RootPage();
+            rootPage.Master = menuPage;
+            rootPage.Detail = NavigationPage;
+            
+			MainPage = rootPage;                        
         }
 
         protected override void OnStart()
