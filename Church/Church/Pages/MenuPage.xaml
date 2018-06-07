@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Church.MenuPage" Title="Menu">
+    <StackLayout Spacing="0">
+        <StackLayout BackgroundColor="Teal" Margin="0, 0, 20, 0">
+            <Label Text="Menu" TextColor="White"/>
+        </StackLayout>
+        <Grid BackgroundColor="Aqua">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>                
+            </Grid.RowDefinitions>
+            <Button Text="Prayer Meetings" Style="{StaticResource MenuButton}" Grid.Row="0"/>
+            <Button Text="Church Meetings" Style="{StaticResource MenuButton}" Grid.Row="1"/>
+            <Button Text="Stories" Style="{StaticResource MenuButton}" Grid.Row="2"/>
+            <Button Text="New Songs" Style="{StaticResource MenuButton}" Grid.Row="3"/>
+            <Button Text="Vpm Songs" Style="{StaticResource MenuButton}" Grid.Row="4"/>
+            <Button Text="Videos" Style="{StaticResource MenuButton}" Grid.Row="5" Command="{Binding VideoPageCommad}"/>
+            <Button Text="Audio Sermons" Style="{StaticResource MenuButton}" Grid.Row="6"/>
+            <Button Text="Help" Style="{StaticResource MenuButton}" Grid.Row="7"/>    
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
