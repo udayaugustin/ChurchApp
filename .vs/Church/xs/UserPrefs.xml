@@ -1,24 +1,12 @@
 ﻿<Properties StartupConfiguration="{13B32BD3-CF1F-4FB6-B558-E84FAD48554F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Log">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Church Status">
     <Files>
-      <File FileName="Church/Church/Pages/EventsPage.xaml" Line="35" Column="15" />
-      <File FileName="Church/Church/App.xaml" Line="45" Column="15" />
-      <File FileName="Church/Church/Pages/EventDetailPage.xaml" Line="22" Column="15" />
-      <File FileName="Church/Church.Android/CustomRenderers/AndroidLabelRenderer.cs" Line="1" Column="1" />
-      <File FileName="Church/Church/AdminPages/EventsList.xaml" Line="49" Column="15" />
-      <File FileName="Church/Church/ViewModel/YoutubeViewModel.cs" Line="1" Column="1" />
-      <File FileName="Church/Church/Pages/PlayVideoPage.xaml" Line="7" Column="15" />
-      <File FileName="Church/Church/Pages/VideoPage.xaml.cs" Line="18" Column="59" />
-      <File FileName="Church/Church/Pages/TestPage.xaml" Line="11" Column="15" />
-      <File FileName="Church/Church/Pages/StartPage.xaml" Line="9" Column="14" />
-      <File FileName="Church/Church/Pages/VideoPage.xaml" Line="59" Column="15" />
+      <File FileName="Church/Church/ViewModel/EventsViewModel.cs" Line="25" Column="14" />
+      <File FileName="Church/Church/Service/PageService.cs" Line="1" Column="1" />
       <File FileName="Church Status" />
-      <File FileName="Church/Church.UWP/project.json" Line="1" Column="1" />
-      <File FileName="Church/Church/App.xaml.cs" Line="14" Column="13" />
-      <File FileName="Log" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
