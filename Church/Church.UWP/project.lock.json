@@ -24507,12 +24507,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\v-udaugu\\Documents\\Visual Studio 2017\\Projects\\Church\\Church\\Church.UWP\\Church.UWP.csproj",
+      "projectUniqueName": "D:\\Projects\\Church\\Church\\Church.UWP\\Church.UWP.csproj",
       "projectName": "Church.UWP",
-      "projectPath": "C:\\Users\\v-udaugu\\Documents\\Visual Studio 2017\\Projects\\Church\\Church\\Church.UWP\\Church.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\v-udaugu\\Documents\\Visual Studio 2017\\Projects\\Church\\Church\\Church.UWP\\project.json",
+      "projectPath": "D:\\Projects\\Church\\Church\\Church.UWP\\Church.UWP.csproj",
+      "projectJsonPath": "D:\\Projects\\Church\\Church\\Church.UWP\\project.json",
       "packagesPath": "C:\\Users\\v-udaugu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v-udaugu\\Documents\\Visual Studio 2017\\Projects\\Church\\Church\\Church.UWP\\obj\\",
+      "outputPath": "D:\\Projects\\Church\\Church\\Church.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\v-udaugu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -24525,8 +24525,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\v-udaugu\\Documents\\Visual Studio 2017\\Projects\\Church\\Church\\Church\\Church.csproj": {
-              "projectPath": "C:\\Users\\v-udaugu\\Documents\\Visual Studio 2017\\Projects\\Church\\Church\\Church\\Church.csproj"
+            "D:\\Projects\\Church\\Church\\Church\\Church.csproj": {
+              "projectPath": "D:\\Projects\\Church\\Church\\Church\\Church.csproj"
             }
           }
         }
