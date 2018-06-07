@@ -1,2 +1,0 @@
-C:\Users\v-udaugu\Documents\Visual Studio 2017\Projects\Church\Church\Church.UWP\Church.UWP.csproj;x86
-C:\Users\v-udaugu\Documents\Visual Studio 2017\Projects\Church\Church\Church\Church.csproj;neutral
