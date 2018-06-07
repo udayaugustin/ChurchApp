@@ -11,18 +11,20 @@ namespace Church
     {
 		public NavigationPage NavigationPage { get; private set; }
 
+        public MasterDetailPage RootPage { get; set; }
+
         public App()
         {
             InitializeComponent();
 
 			var menuPage = new MenuPage();
-			NavigationPage = new NavigationPage(new EventsPage());
+			NavigationPage = new NavigationPage(new MeetingsPage("church_meetings"));
             
-			var rootPage = new RootPage();
-            rootPage.Master = menuPage;
-            rootPage.Detail = NavigationPage;
+			RootPage = new RootPage();
+            RootPage.Master = menuPage;
+            RootPage.Detail = NavigationPage;
             
-			MainPage = rootPage;                        
+			MainPage = RootPage;                        
         }
 
         protected override void OnStart()

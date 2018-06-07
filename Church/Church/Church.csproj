@@ -13,7 +13,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,19 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdminPages\EventsList.xaml.cs">
-      <DependentUpon>EventsList.xaml</DependentUpon>
+    <Compile Include="AdminPages\AdminMeetingPage.xaml.cs">
+      <DependentUpon>AdminMeetingPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AdminViewModel\EventListViewModel.cs" />
+    <Compile Include="AdminViewModel\AdminMeetingsViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\AdminSecondaryMenu.cs" />
+    <Compile Include="Constants\TableConstants.cs" />
     <Compile Include="Interface\IAppResource.cs" />
     <Compile Include="Interface\IPageService.cs" />
-    <Compile Include="Model\Events.cs" />
+    <Compile Include="Model\Meeting.cs" />
     <Compile Include="Model\User.cs" />
-    <Compile Include="AdminPages\ManageEvents.xaml.cs">
-      <DependentUpon>ManageEvents.xaml</DependentUpon>
+    <Compile Include="AdminPages\AdminManageMeetingPage.xaml.cs">
+      <DependentUpon>AdminManageMeetingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
@@ -53,11 +56,11 @@
     <Compile Include="Pages\VideoPage.xaml.cs">
       <DependentUpon>VideoPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EventDetailPage.xaml.cs">
-      <DependentUpon>EventDetailPage.xaml</DependentUpon>
+    <Compile Include="Pages\MeetingDetailPage.xaml.cs">
+      <DependentUpon>MeetingDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EventsPage.xaml.cs">
-      <DependentUpon>EventsPage.xaml</DependentUpon>
+    <Compile Include="Pages\MeetingsPage.xaml.cs">
+      <DependentUpon>MeetingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -71,22 +74,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AppResourceService.cs" />
     <Compile Include="Service\Service.cs" />
-    <Compile Include="AdminViewModel\ManageEventViewModel.cs" />
+    <Compile Include="AdminViewModel\AdminMeetingManageViewModel.cs" />
     <Compile Include="ViewModel\AdminPageViewModel.cs" />
-    <Compile Include="ViewModel\EventDetailViewModel.cs" />
-    <Compile Include="ViewModel\EventsViewModel.cs" />
+    <Compile Include="ViewModel\MeetingDetailViewModel.cs" />
+    <Compile Include="ViewModel\MeetingsViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="Service\PageService.cs" />
     <Compile Include="Pages\PlayVideoPage.xaml.cs">
       <DependentUpon>PlayVideoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="ViewModel\YoutubeViewModel.cs" />
     <Compile Include="Model\YoutubeItem.cs" />
     <Compile Include="Pages\RootPage.xaml.cs">
-    	<DependentUpon>RootPage.xaml</DependentUpon>
+      <DependentUpon>RootPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MenuPage.xaml.cs">
-    	<DependentUpon>MenuPage.xaml</DependentUpon>
+      <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -127,7 +131,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />    
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\TestPage.xaml">
@@ -136,25 +140,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\EventsPage.xaml">
+    <EmbeddedResource Include="Pages\MeetingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\EventDetailPage.xaml">
+    <EmbeddedResource Include="Pages\MeetingDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AdminPages\ManageEvents.xaml">
+    <EmbeddedResource Include="AdminPages\AdminManageMeetingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AdminPages\EventsList.xaml">
+    <EmbeddedResource Include="AdminPages\AdminMeetingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

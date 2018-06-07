@@ -10,7 +10,7 @@ namespace Church
         public RootPage()
         {
             InitializeComponent();
-			MasterBehavior = MasterBehavior.Popover;
+			MasterBehavior = MasterBehavior.Popover;            
         }
     }
 }

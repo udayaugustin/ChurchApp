@@ -9,33 +9,45 @@ namespace Church
     public class Service
     {
         private HttpClient client = new HttpClient();
-        private string baseUrl = "https://ezsbc.com/wp_new/events/api_query.php?";
+        private string baseUrl = "https://ezsbc.com/wp_new/events/meeting_query.php?";
         private string selectAction = "action=select";
         private string addAction = "action=insert";
         private string updateAction = "action=update";
         private string deleteAction = "action=delete";
+        private string meetingType;
 
-        public async Task<ObservableCollection<Events>> GetEvents()
+        public Service()
+        {
+
+        }
+
+        public Service(string meetingType)
+        {
+            this.meetingType = meetingType;
+            baseUrl += "meetingType=" + meetingType+"&";
+        }
+
+        public async Task<ObservableCollection<Meeting>> GetMeetings()
         {
             var content = await client.GetStringAsync(baseUrl+selectAction);
-            var events = JsonConvert.DeserializeObject<ObservableCollection<Events>>(content);
+            var events = JsonConvert.DeserializeObject<ObservableCollection<Meeting>>(content);
 
             return events;
         }
 
-        public async Task CreateEventAsync(Events eventItem)
+        public async Task CreateMeetingAsync(Meeting eventItem)
         {
             var content = JsonConvert.SerializeObject(eventItem);
             await client.PostAsync(baseUrl + addAction, new StringContent(content));
         }
 
-        public async Task UpdateEventAsync(Events eventItem)
+        public async Task UpdateMeetingAsync(Meeting eventItem)
         {
             var content = JsonConvert.SerializeObject(eventItem);            
             await client.PostAsync(baseUrl + updateAction, new StringContent(content));
         }
 
-        public async Task DeleteEventAsync(Events eventItem)
+        public async Task DeleteMeetingAsync(Meeting eventItem)
         {
             var content = JsonConvert.SerializeObject(eventItem);            
             await client.PostAsync(baseUrl + deleteAction, new StringContent(content));

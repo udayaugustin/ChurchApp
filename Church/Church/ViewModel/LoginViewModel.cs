@@ -59,7 +59,7 @@ namespace Church
             if (ValidateAuthentication(User))
             {
                 appResourceService.UpdateLoginStatus(true);                
-                await pageService.PushAsync(new EventsList());
+                await pageService.PushAsync(new AdminMeetingPage(TableConstants.ChurchMeetingType));
             }
             else
             {

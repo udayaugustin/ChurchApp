@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church.MeetingsPage"
+             Title="Events">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding EventList}" x:Name="listView" 
+                      Style="{StaticResource listView}"                      
+                      ItemSelected="listView_ItemSelected"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"                      
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="0,5,0,5" OutlineColor="Gray" HasShadow="true"> 
+                            <StackLayout>
+                                <StackLayout Padding="10,0">
+                                    <Label Text="{Binding EventName}" Style="{StaticResource eventTitle}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="date.png" /><Label Text="{Binding StartDate, StringFormat='{0:dd/MM/yyyy}'}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource bodyText}"/>
+                                        <Image Source="time.png" HorizontalOptions="EndAndExpand"  /><Label Text="{Binding EventTime, StringFormat='{0:dd/MM/yyyy}'}" HorizontalOptions="End" Style="{StaticResource bodyText}" VerticalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

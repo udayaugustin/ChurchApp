@@ -7,7 +7,8 @@ namespace Church
     {        
         public async Task PushAsync(Page page)
         {
-			await (Application.Current as App).NavigationPage.Navigation.PushAsync(page);
+            (Application.Current as App).RootPage.IsPresented = false;
+            await (Application.Current as App).NavigationPage.Navigation.PushAsync(page);            
         }        
 
         public async Task PopAsync()
