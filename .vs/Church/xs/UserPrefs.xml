@@ -3,6 +3,8 @@
     <Files>
       <File FileName="Church/Church/ViewModel/EventsViewModel.cs" Line="25" Column="14" />
       <File FileName="Church/Church/Service/PageService.cs" Line="1" Column="1" />
+      <File FileName="Church/Church/App.xaml.cs" Line="18" Column="28" />
+      <File FileName="Church/Church/Pages/MenuPage.xaml.cs" Line="12" Column="18" />
       <File FileName="Church Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
