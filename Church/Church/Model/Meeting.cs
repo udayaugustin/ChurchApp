@@ -24,5 +24,7 @@ namespace Church
         }
 
         public string EventDetail { get; set; }
+
+        public string MeetingType { get; set; }
     }
 }

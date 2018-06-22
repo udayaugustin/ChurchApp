@@ -24,7 +24,7 @@ namespace Church
         public Service(string meetingType)
         {
             this.meetingType = meetingType;
-            baseUrl += "meetingType=" + meetingType+"&";
+            //baseUrl += "meetingType=" + meetingType+"&";
         }
 
         public async Task<ObservableCollection<Meeting>> GetMeetings()

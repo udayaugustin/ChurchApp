@@ -18,7 +18,7 @@ namespace Church
             InitializeComponent();
 
 			var menuPage = new MenuPage();
-			NavigationPage = new NavigationPage(new MeetingsPage("church_meetings"));
+			NavigationPage = new NavigationPage(new MeetingsPage(TableConstants.ChurchMeetingType));
             
 			RootPage = new RootPage();
             RootPage.Master = menuPage;

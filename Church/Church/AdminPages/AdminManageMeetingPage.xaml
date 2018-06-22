@@ -6,7 +6,7 @@
              >
     <ContentPage.Content>
         <StackLayout Style="{StaticResource pageStyle}">
-            
+
             <Entry Placeholder="Title" Text="{Binding EventItem.EventName}"/>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Start Date" VerticalOptions="Center"/>
@@ -16,7 +16,7 @@
                 <Label Text="End Date" VerticalOptions="Center"/>
                 <DatePicker x:Name="end" Date="{Binding EventItem.EndDate}" Style="{StaticResource datePicker}"/>
             </StackLayout>
-            
+
             <Label Text="Enter time in 24 Hour format"/>
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="Start Time" Text="{Binding EventItem.StartTime}"/>
@@ -25,8 +25,16 @@
 
             <Label Text="Event Info:" />
             <Editor HeightRequest="150" Text="{Binding EventItem.EventDetail}" />
+            <Picker Title="Choose meeting type">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Church Meeting</x:String>
+                        <x:String>PrayerMeeting</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
             <Button Text="Submit" Command="{Binding SubmitCommand}"/>
-            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

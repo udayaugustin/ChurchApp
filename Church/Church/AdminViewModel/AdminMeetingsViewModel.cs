@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -11,24 +12,25 @@ namespace Church
         private Service service;
         private ObservableCollection<Meeting> meetingList = new ObservableCollection<Meeting>();
         private IPageService pageService;
+        private string meetingType;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand NavigateToDetailView { get; set; }
 
-		public ICommand EditCommand
-		{
-			get
-			{
-				return new Command<Meeting>(async ev => await GoToDetailViewAsync(ev));
-			}
-		}
+        public ICommand EditCommand
+        {
+            get
+            {
+                return new Command<Meeting>(async ev => await GoToDetailViewAsync(ev));
+            }
+        }
 
         public ICommand DeleteCommand { get; set; }
 
         public ICommand AddCommand { get; set; }
 
-        public ICommand NavigateToHome { get; set; }        
+        public ICommand NavigateToHome { get; set; }
 
         public ObservableCollection<Meeting> EventList
         {
@@ -42,6 +44,7 @@ namespace Church
 
         public AdminMeetingsViewModel(IPageService pageService, string meetingType)
         {
+            this.meetingType = meetingType;
             this.pageService = pageService;
             service = new Service(meetingType);
 
@@ -54,12 +57,13 @@ namespace Church
 
         public async Task GetMeetings()
         {
-            EventList = await service.GetMeetings();
+            var list = await service.GetMeetings();
+            EventList = new ObservableCollection<Meeting>(list.Where(e => e.MeetingType == meetingType));
         }
 
         private async Task GoToDetailViewAsync(Meeting selectedItem)
         {
-            await pageService.UpdatePresentNavigationPage(new MeetingDetailPage(selectedItem));
+            await pageService.PushAsync(new MeetingDetailPage(selectedItem));
         }
 
         private async Task GoToMeetingEditView(Meeting editItem)
@@ -80,7 +84,7 @@ namespace Church
 
         private async Task GoToHome()
         {
-			await pageService.PushAsync(new StartPage());
+            await pageService.PushAsync(new StartPage());
         }
     }
 }

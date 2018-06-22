@@ -11,6 +11,10 @@ namespace Church
 
 		public ICommand AddCommand { get; set; }
 
+        public ICommand NaviagateToAdminChurchMeetings{ get; set; }
+
+        public ICommand NaviagateToAdminPrayerMeetings { get; set; }
+
         public ICommand NavigateToHome { get; set; }        
 
 		public AdminMenuViewModel(IPageService pageService)
@@ -18,7 +22,9 @@ namespace Church
 			this.pageService = pageService;
 			AddCommand = new Command(async () => await AddMeetingAsync());
             NavigateToHome = new Command(async () => await GoToHome());
-		}
+            NaviagateToAdminChurchMeetings = new Command(async () => await GoToChurchMeeting());
+            NaviagateToAdminPrayerMeetings = new Command(async () => await GoToPrayerMeeting());
+        }
 
 		private async Task AddMeetingAsync()
         {
@@ -27,7 +33,17 @@ namespace Church
 
         private async Task GoToHome()
         {
-			await pageService.UpdatePresentNavigationPage(new MeetingsPage("church_meetings"));
+			await pageService.UpdatePresentNavigationPage(new MeetingsPage(TableConstants.ChurchMeetingType));
+        }
+
+        private async Task GoToChurchMeeting()
+        {
+            await pageService.UpdatePresentNavigationPage(new AdminMeetingPage(TableConstants.ChurchMeetingType));
+        }
+
+        private async Task GoToPrayerMeeting()
+        {
+            await pageService.UpdatePresentNavigationPage(new AdminMeetingPage(TableConstants.PrayerMeetingType));
         }
     }
 }

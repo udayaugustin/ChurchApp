@@ -24507,12 +24507,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Church\\Church\\Church.UWP\\Church.UWP.csproj",
+      "projectUniqueName": "D:\\Projects\\churchv1\\Church\\Church.UWP\\Church.UWP.csproj",
       "projectName": "Church.UWP",
-      "projectPath": "D:\\Projects\\Church\\Church\\Church.UWP\\Church.UWP.csproj",
-      "projectJsonPath": "D:\\Projects\\Church\\Church\\Church.UWP\\project.json",
+      "projectPath": "D:\\Projects\\churchv1\\Church\\Church.UWP\\Church.UWP.csproj",
+      "projectJsonPath": "D:\\Projects\\churchv1\\Church\\Church.UWP\\project.json",
       "packagesPath": "C:\\Users\\v-udaugu\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Church\\Church\\Church.UWP\\obj\\",
+      "outputPath": "D:\\Projects\\churchv1\\Church\\Church.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\v-udaugu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -24525,8 +24525,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "D:\\Projects\\Church\\Church\\Church\\Church.csproj": {
-              "projectPath": "D:\\Projects\\Church\\Church\\Church\\Church.csproj"
+            "D:\\Projects\\churchv1\\Church\\Church\\Church.csproj": {
+              "projectPath": "D:\\Projects\\churchv1\\Church\\Church\\Church.csproj"
             }
           }
         }
