@@ -39,7 +39,7 @@ namespace Church
 
         private void GoToDetailView(Meeting selectedItem)
         {
-            pageService.PushAsync(new MeetingDetailPage(selectedItem));
+			pageService.PushAsync(new MeetingDetailPage(selectedItem));
         }
     }
 }

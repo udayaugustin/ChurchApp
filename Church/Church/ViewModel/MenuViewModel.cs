@@ -28,22 +28,22 @@ namespace Church
 
         private void NavigateToVideosPage()
         {
-            pageService.PushAsync(new VideoPage());
+            pageService.UpdatePresentNavigationPage(new VideoPage());
         }
 
         private void NavigateToChurchMeetingPage()
         {
-            pageService.PushAsync(new MeetingsPage(TableConstants.ChurchMeetingType));
+            pageService.UpdatePresentNavigationPage(new MeetingsPage(TableConstants.ChurchMeetingType));
         }
 
         private void NavigateToPrayerMeetingPage()
         {
-            pageService.PushAsync(new MeetingsPage(TableConstants.PrayerMeetingType));
+            pageService.UpdatePresentNavigationPage(new MeetingsPage(TableConstants.PrayerMeetingType));
         }
 
         private void NavigateToAdminPage()
         {
-            pageService.PushAsync(new AdminPage());
+            pageService.UpdatePresentNavigationPage(new AdminPage());
         }
     }
 }

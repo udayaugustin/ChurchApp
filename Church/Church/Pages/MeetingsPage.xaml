@@ -9,12 +9,12 @@
                       Style="{StaticResource listView}"                      
                       ItemSelected="listView_ItemSelected"
                       HasUnevenRows="True"
-                      SeparatorVisibility="None"                      
+                      SeparatorVisibility="None"
                       >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame Margin="0,5,0,5" OutlineColor="Gray" HasShadow="true"> 
+                            <Frame Margin="0,5,0,5" OutlineColor="Gray" HasShadow="true">                                
                             <StackLayout>
                                 <StackLayout Padding="10,0">
                                     <Label Text="{Binding EventName}" Style="{StaticResource eventTitle}" />

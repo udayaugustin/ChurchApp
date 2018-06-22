@@ -4,7 +4,7 @@ using Xamarin.Forms.Xaml;
 namespace Church
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AdminMeetingPage : ContentPage
+	public partial class AdminMeetingPage : AdminMenu
     {
         public AdminMeetingPage(string meetingType)
         {

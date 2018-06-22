@@ -12,7 +12,7 @@
 
         public void ValidateUser()
         {
-            pageService.PushAsync(new LoginPage());
+            pageService.UpdatePresentNavigationPage(new LoginPage());
         }
     }
 }

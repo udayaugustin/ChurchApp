@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<local:AdminMenu xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Church;assembly=Church"
              x:Class="Church.AdminMeetingPage"
              x:Name="EventListPage"
              Title="Admin Meetings List">
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Add Event" Order="Secondary" Command="{Binding AddCommand}"/>
         <ToolbarItem Text="Home" Order="Secondary" Command="{Binding NavigateToHome}"/>
-    </ContentPage.ToolbarItems>
-    <ContentPage.Content>
+    </ContentPage.ToolbarItems>-->
         <StackLayout>
             <ListView ItemsSource="{Binding EventList}" x:Name="listView" 
                       SeparatorVisibility="None" 
@@ -44,6 +44,5 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+        </StackLayout>    
+</local:AdminMenu>

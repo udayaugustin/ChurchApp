@@ -16,7 +16,13 @@ namespace Church
 
         public ICommand NavigateToDetailView { get; set; }
 
-        public ICommand EditCommand { get; set; }
+		public ICommand EditCommand
+		{
+			get
+			{
+				return new Command<Meeting>(async ev => await GoToDetailViewAsync(ev));
+			}
+		}
 
         public ICommand DeleteCommand { get; set; }
 
@@ -40,7 +46,7 @@ namespace Church
             service = new Service(meetingType);
 
             NavigateToDetailView = new Command<Meeting>(async ev => await GoToDetailViewAsync(ev));
-            EditCommand = new Command<Meeting>(async ev => await GoToMeetingEditView(ev));
+            //EditCommand = new Command<Meeting>(async ev => await GoToMeetingEditView(ev));
             DeleteCommand = new Command<Meeting>(async ev => await DeleteMeetingAsync(ev));
             AddCommand = new Command(async () => await AddMeetingAsync());
             NavigateToHome = new Command(async () => await GoToHome());
@@ -53,12 +59,12 @@ namespace Church
 
         private async Task GoToDetailViewAsync(Meeting selectedItem)
         {
-            await pageService.PushAsync(new MeetingDetailPage(selectedItem));
+            await pageService.UpdatePresentNavigationPage(new MeetingDetailPage(selectedItem));
         }
 
         private async Task GoToMeetingEditView(Meeting editItem)
         {
-            await pageService.PushAsync(new AdminManageMeetingPage(editItem));
+            await pageService.UpdatePresentNavigationPage(new AdminManageMeetingPage(editItem));
         }
 
         private async Task DeleteMeetingAsync(Meeting meetingItem)
@@ -69,12 +75,12 @@ namespace Church
 
         private async Task AddMeetingAsync()
         {
-            await pageService.PushAsync(new AdminManageMeetingPage(new Meeting()));
+            await pageService.UpdatePresentNavigationPage(new AdminManageMeetingPage(new Meeting()));
         }
 
         private async Task GoToHome()
         {
-            await pageService.PushAsync(new StartPage());
+			await pageService.PushAsync(new StartPage());
         }
     }
 }

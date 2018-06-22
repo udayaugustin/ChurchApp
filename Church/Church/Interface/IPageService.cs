@@ -5,8 +5,10 @@ namespace Church
 {
     public interface IPageService
     {
-        Task PushAsync(Page page);
+        Task UpdatePresentNavigationPage(Page page);
 
         Task PopAsync();
+        
+		Task PushAsync(Page page);
     }
 }
