@@ -3,9 +3,12 @@
     <Files>
       <File FileName="Church/Church/Service/PageService.cs" Line="28" Column="30" />
       <File FileName="Church/Church/Interface/IPageService.cs" Line="15" Column="1" />
-      <File FileName="Church/Church/Pages/MeetingsPage.xaml" Line="23" Column="43" />
+      <File FileName="Church/Church/Pages/MeetingsPage.xaml" Line="35" Column="15" />
       <File FileName="Church/Church/ViewModel/MeetingsViewModel.cs" Line="42" Column="25" />
-      <File FileName="Church/Church/AdminViewModel/AdminMeetingsViewModel.cs" Line="70" Column="66" />
+      <File FileName="Church/Church/AdminViewModel/AdminMeetingsViewModel.cs" Line="1" Column="1" />
+      <File FileName="Church/Church/AdminPages/AdminMeetingPage.xaml.cs" Line="21" Column="10" />
+      <File FileName="Church/Church/AdminPages/AdminMeetingPage.xaml" Line="48" Column="19" />
+      <File FileName="Church/Church/Constants/TableConstants.cs" Line="5" Column="50" />
       <File FileName="church Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
