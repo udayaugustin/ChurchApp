@@ -49,6 +49,7 @@ namespace Church
         public async Task GetMeetings()
         {
             EventList = await service.GetMeetings();
+
         }
 
         private async Task GoToDetailViewAsync(Meeting selectedItem)

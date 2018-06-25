@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -32,7 +33,7 @@ namespace Church
             var content = await client.GetStringAsync(baseUrl+selectAction);
             var events = JsonConvert.DeserializeObject<ObservableCollection<Meeting>>(content);
 
-            return events;
+			return new ObservableCollection<Meeting>(events.Where(e => e.MeetingType == meetingType));
         }
 
         public async Task CreateMeetingAsync(Meeting eventItem)

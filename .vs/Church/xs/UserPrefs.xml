@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{13B32BD3-CF1F-4FB6-B558-E84FAD48554F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="church Status">
     <Files>
-      <File FileName="Church/Church/Service/PageService.cs" Line="28" Column="30" />
-      <File FileName="Church/Church/Interface/IPageService.cs" Line="15" Column="1" />
-      <File FileName="Church/Church/Pages/MeetingsPage.xaml" Line="35" Column="15" />
-      <File FileName="Church/Church/ViewModel/MeetingsViewModel.cs" Line="42" Column="25" />
-      <File FileName="Church/Church/AdminViewModel/AdminMeetingsViewModel.cs" Line="1" Column="1" />
-      <File FileName="Church/Church/AdminPages/AdminMeetingPage.xaml.cs" Line="21" Column="10" />
-      <File FileName="Church/Church/AdminPages/AdminMeetingPage.xaml" Line="48" Column="19" />
-      <File FileName="Church/Church/Constants/TableConstants.cs" Line="5" Column="50" />
+      <File FileName="Church/Church/AdminViewModel/AdminMeetingsViewModel.cs" Line="63" Column="1" />
+      <File FileName="Church/Church/AdminViewModel/AdminMeetingManageViewModel.cs" Line="79" Column="1" />
+      <File FileName="Source Not Available" />
+      <File FileName="Church/Church/AdminViewModel/AdminMenuViewModel.cs" Line="40" Column="1" />
+      <File FileName="Church/Church/AdminPages/AdminManageMeetingPage.xaml.cs" Line="14" Column="1" />
+      <File FileName="Church/Church/Service/PageService.cs" Line="21" Column="1" />
+      <File FileName="Church/Church/AdminPages/AdminManageMeetingPage.xaml" Line="39" Column="26" />
+      <File FileName="Church/Church/Service/Service.cs" Line="43" Column="1" />
       <File FileName="church Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/udayaugustin/Projects/church/Church/Church/AdminViewModel/AdminMeetingManageViewModel.cs" relfile="Church/Church/AdminViewModel/AdminMeetingManageViewModel.cs" line="65" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
