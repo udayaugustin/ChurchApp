@@ -28,7 +28,7 @@ namespace Church
 
 		private async Task AddMeetingAsync()
         {
-            await pageService.UpdatePresentNavigationPage(new AdminManageMeetingPage(new Meeting()));
+            await pageService.PushAsync(new AdminManageMeetingPage(new Meeting()));
         }
 
         private async Task GoToHome()

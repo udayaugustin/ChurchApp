@@ -3,20 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Church.MeetingDetailPage">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource pageStyle}">
-            <Label Text="{Binding EventItem.EventName}" Style="{StaticResource eventTitle}" FontAttributes="Bold"/>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="{Binding EventItem.StartDate, StringFormat='Start Date: {0:dd/MM/yyyy}'}" Style="{StaticResource bodyText}" />
-                <Label Text="{Binding EventItem.EndDate, StringFormat='End Date: {0:dd/MM/yyyy}'}" HorizontalOptions="EndAndExpand" Style="{StaticResource bodyText}" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="Yellow">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Back" Grid.Column="0" Style="{StaticResource BackActionLabel}"/>
+                <BoxView Grid.Column="0" x:Name="BackAction" BackgroundColor="Transparent">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoBack}"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+            </Grid>
+            <StackLayout Style="{StaticResource pageStyle}" Grid.Row="1">
+                <Label Text="{Binding EventItem.EventName}" Style="{StaticResource eventTitle}" FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding EventItem.StartDate, StringFormat='Start Date: {0:dd/MM/yyyy}'}" Style="{StaticResource bodyText}" />
+                    <Label Text="{Binding EventItem.EndDate, StringFormat='End Date: {0:dd/MM/yyyy}'}" HorizontalOptions="EndAndExpand" Style="{StaticResource bodyText}" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding EventItem.EventTime, StringFormat='Time: {0}'}" Style="{StaticResource bodyText}"/>
+                </StackLayout>
+
+                <Label Text="Details:" Style="{StaticResource subHeader}"/>
+                <Label Text="{Binding EventItem.EventDetail}" Style="{StaticResource bodyText}"/>
+
             </StackLayout>
-
-            <StackLayout Orientation="Horizontal">
-                <Label Text="{Binding EventItem.EventTime, StringFormat='Time: {0}'}" Style="{StaticResource bodyText}"/>
-            </StackLayout>
-
-            <Label Text="Details:" Style="{StaticResource subHeader}"/>
-            <Label Text="{Binding EventItem.EventDetail}" Style="{StaticResource bodyText}"/>
-
-        </StackLayout>
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

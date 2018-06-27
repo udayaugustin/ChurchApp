@@ -22,12 +22,12 @@ namespace Church
 
         public async Task PopAsync()
         {
-			await (Application.Current as App).NavigationPage.Navigation.PopAsync();
+            await (Application.Current as App).NavigationPage.Navigation.PopAsync();
         }
 
 		public async Task PushAsync(Page page)
-		{
-			await (Application.Current as App).NavigationPage.Navigation.PushAsync(page);            
-		}
+		{            
+            await (Application.Current as App).NavigationPage.Navigation.PushAsync(page);            
+        }
 	}
 }

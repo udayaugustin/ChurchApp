@@ -10,24 +10,24 @@
         
         <StackLayout Style="{StaticResource pageStyle}">
 
-            <Entry Placeholder="Title" Text="{Binding EventItem.EventName}"/>
+                <Entry Placeholder="Title" Text="{Binding MeetingItem.EventName}"/>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Start Date" VerticalOptions="Center"/>
-                <DatePicker x:Name="startDatePicker" Date="{Binding EventItem.StartDate}" Style="{StaticResource datePicker}"/>
+                    <DatePicker x:Name="startDatePicker" Date="{Binding MeetingItem.StartDate}" Style="{StaticResource datePicker}"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="End Date" VerticalOptions="Center"/>
-                <DatePicker x:Name="end" Date="{Binding EventItem.EndDate}" Style="{StaticResource datePicker}"/>
+                    <DatePicker x:Name="end" Date="{Binding MeetingItem.EndDate}" Style="{StaticResource datePicker}"/>
             </StackLayout>
 
             <Label Text="Enter time in 24 Hour format"/>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Start Time" Text="{Binding EventItem.StartTime}"/>
-                <Entry Placeholder="End Time" Text="{Binding EventItem.EndTime}" HorizontalOptions="EndAndExpand"/>
+                    <Entry Placeholder="Start Time" Text="{Binding MeetingItem.StartTime}"/>
+                    <Entry Placeholder="End Time" Text="{Binding MeetingItem.EndTime}" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <Label Text="Event Info:" />
-            <Editor HeightRequest="150" Text="{Binding EventItem.EventDetail}" />
+                <Editor HeightRequest="150" Text="{Binding MeetingItem.EventDetail}" />
             
             <Picker Title="Choose meeting type" ItemsSource="{Binding MeetingTypeList}" 
                     SelectedIndex="{Binding SelectedMeetingIndex}">                

@@ -33,7 +33,7 @@ namespace Church
             service = new Service(meetingType);
             this.meetingType = meetingType;
             this.pageService = pageService;
-            NavigateToDetailView = new Command<Meeting>(ev => GoToDetailView(ev));
+            NavigateToDetailView = new Command<Meeting>(async (ev) => await GoToDetailView(ev));
         }
 
         public async Task GetEvents()
@@ -42,9 +42,9 @@ namespace Church
             EventList = new ObservableCollection<Meeting>(list.Where(e => e.MeetingType == meetingType));
         }
 
-        private void GoToDetailView(Meeting selectedItem)
+        private async Task GoToDetailView(Meeting selectedItem)
         {
-            pageService.PushAsync(new MeetingDetailPage(selectedItem));
+            await pageService.PushAsync(new MeetingDetailPage(selectedItem));
         }
     }
 }

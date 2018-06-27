@@ -19,9 +19,7 @@ namespace Church
 		public ICommand EditCommand { get; set; }
 
         public ICommand DeleteCommand { get; set; }
-
-        public ICommand AddCommand { get; set; }
-
+        
         public ICommand NavigateToHome { get; set; }        
 
         public ObservableCollection<Meeting> EventList
@@ -42,7 +40,6 @@ namespace Church
             NavigateToDetailView = new Command<Meeting>(async ev => await GoToDetailViewAsync(ev));
             EditCommand = new Command<Meeting>(async ev => await GoToMeetingEditView(ev));
             DeleteCommand = new Command<Meeting>(async ev => await DeleteMeetingAsync(ev));
-            AddCommand = new Command(async () => await AddMeetingAsync());
             NavigateToHome = new Command(async () => await GoToHome());
         }
 
@@ -54,24 +51,19 @@ namespace Church
 
         private async Task GoToDetailViewAsync(Meeting selectedItem)
         {
-            await pageService.UpdatePresentNavigationPage(new MeetingDetailPage(selectedItem));
+            await pageService.PushAsync(new MeetingDetailPage(selectedItem));
         }
 
         private async Task GoToMeetingEditView(Meeting editItem)
         {
-            await pageService.UpdatePresentNavigationPage(new AdminManageMeetingPage(editItem));
+            await pageService.PushAsync(new AdminManageMeetingPage(editItem));
         }
 
         private async Task DeleteMeetingAsync(Meeting meetingItem)
         {
             await service.DeleteMeetingAsync(meetingItem);
             meetingList.Remove(meetingItem);
-        }
-
-        private async Task AddMeetingAsync()
-        {
-            await pageService.UpdatePresentNavigationPage(new AdminManageMeetingPage(new Meeting()));
-        }
+        }        
 
         private async Task GoToHome()
         {

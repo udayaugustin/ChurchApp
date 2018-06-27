@@ -10,7 +10,9 @@ namespace Church
         {
             InitializeComponent();
 
-            BindingContext = new MeetingDetailViewModel(eventItem);
+            BindingContext = new MeetingDetailViewModel(eventItem, new PageService());
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
