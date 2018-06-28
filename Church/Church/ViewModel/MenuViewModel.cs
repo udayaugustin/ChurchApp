@@ -16,6 +16,8 @@ namespace Church
 
         public ICommand AdminPageCommad { get; set; }
 
+        public ICommand StoryPageCommand { get; set; }
+
         public MenuViewModel(IPageService pageService)
         {
             this.pageService = pageService;
@@ -24,6 +26,7 @@ namespace Church
             ChurchMeetingPageCommand = new Command(NavigateToChurchMeetingPage);
             PrayerMeetingPageCommand = new Command(NavigateToPrayerMeetingPage);
             AdminPageCommad = new Command(NavigateToAdminPage);
+            StoryPageCommand = new Command(NavigateToStoryListPage);
         }
 
         private void NavigateToVideosPage()
@@ -44,6 +47,11 @@ namespace Church
         private void NavigateToAdminPage()
         {
             pageService.UpdatePresentNavigationPage(new AdminPage());
+        }
+
+        private void NavigateToStoryListPage()
+        {
+            pageService.UpdatePresentNavigationPage(new StoryList());
         }
     }
 }

@@ -37,6 +37,10 @@
     <Compile Include="AdminPages\AdminMeetingPage.xaml.cs">
       <DependentUpon>AdminMeetingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdminPages\Stories.xaml.cs">
+      <DependentUpon>Stories.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewModel\AddStoryViewModel.cs" />
     <Compile Include="AdminViewModel\AdminMeetingsViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -45,12 +49,16 @@
     <Compile Include="Interface\IAppResource.cs" />
     <Compile Include="Interface\IPageService.cs" />
     <Compile Include="Model\Meeting.cs" />
+    <Compile Include="Model\Story.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="AdminPages\AdminManageMeetingPage.xaml.cs">
       <DependentUpon>AdminManageMeetingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StoryList.xaml.cs">
+      <DependentUpon>StoryList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\VideoPage.xaml.cs">
       <DependentUpon>VideoPage.xaml</DependentUpon>
@@ -83,6 +91,7 @@
       <DependentUpon>PlayVideoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="ViewModel\StoryViewModel.cs" />
     <Compile Include="ViewModel\YoutubeViewModel.cs" />
     <Compile Include="Model\YoutubeItem.cs" />
     <Compile Include="Pages\RootPage.xaml.cs">
@@ -195,7 +204,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
+    <EmbeddedResource Include="Pages\StoryList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminPages\Stories.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

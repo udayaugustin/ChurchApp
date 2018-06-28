@@ -17,6 +17,8 @@ namespace Church
 
         public ICommand NavigateToHome { get; set; }        
 
+        public ICommand AddStoryCommand { get; set; }
+
 		public AdminMenuViewModel(IPageService pageService)
 		{
 			this.pageService = pageService;
@@ -24,6 +26,7 @@ namespace Church
             NavigateToHome = new Command(async () => await GoToHome());
             NaviagateToAdminChurchMeetings = new Command(async () => await GoToChurchMeeting());
             NaviagateToAdminPrayerMeetings = new Command(async () => await GoToPrayerMeeting());
+            AddStoryCommand = new Command(async () => await AddStory());
         }
 
 		private async Task AddMeetingAsync()
@@ -44,6 +47,11 @@ namespace Church
         private async Task GoToPrayerMeeting()
         {
             await pageService.UpdatePresentNavigationPage(new AdminMeetingPage(TableConstants.PrayerMeetingType));
+        }
+
+        private async Task AddStory()
+        {
+            await pageService.PushAsync(new Stories(new Story()));
         }
     }
 }

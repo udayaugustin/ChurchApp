@@ -18,7 +18,7 @@
             </Grid.RowDefinitions>
             <Button Text="Church Meetings" Style="{StaticResource MenuButton}" Grid.Row="0" Command="{Binding ChurchMeetingPageCommand}"/>
             <Button Text="Prayer Meetings" Style="{StaticResource MenuButton}" Grid.Row="1" Command="{Binding PrayerMeetingPageCommand}"/>
-            <Button Text="Stories" Style="{StaticResource MenuButton}" Grid.Row="2"/>
+            <Button Text="Stories" Style="{StaticResource MenuButton}" Grid.Row="2" Command="{Binding StoryPageCommand}"/>
             <Button Text="New Songs" Style="{StaticResource MenuButton}" Grid.Row="3"/>
             <Button Text="Vpm Songs" Style="{StaticResource MenuButton}" Grid.Row="4"/>
             <Button Text="Videos" Style="{StaticResource MenuButton}" Grid.Row="5" Command="{Binding VideoPageCommand}"/>

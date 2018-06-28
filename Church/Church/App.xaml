@@ -44,6 +44,10 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
             </Style>
+
+            <Style x:Key="StoryGrid" TargetType="Grid">
+                
+            </Style>
             
             <Style x:Key="MenuButton" TargetType="Button">
                 
