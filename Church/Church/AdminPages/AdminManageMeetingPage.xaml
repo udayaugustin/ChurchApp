@@ -6,36 +6,55 @@
              >
     <ContentPage.Content>
         <ScrollView>
-            
-        
-        <StackLayout Style="{StaticResource pageStyle}">
 
-                <Entry Placeholder="Title" Text="{Binding MeetingItem.EventName}"/>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Start Date" VerticalOptions="Center"/>
-                    <DatePicker x:Name="startDatePicker" Date="{Binding MeetingItem.StartDate}" Style="{StaticResource datePicker}"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="End Date" VerticalOptions="Center"/>
-                    <DatePicker x:Name="end" Date="{Binding MeetingItem.EndDate}" Style="{StaticResource datePicker}"/>
-            </StackLayout>
 
-            <Label Text="Enter time in 24 Hour format"/>
-            <StackLayout Orientation="Horizontal">
-                    <Entry Placeholder="Start Time" Text="{Binding MeetingItem.StartTime}"/>
-                    <Entry Placeholder="End Time" Text="{Binding MeetingItem.EndTime}" HorizontalOptions="EndAndExpand"/>
-            </StackLayout>
+            <StackLayout Style="{StaticResource pageStyle}" Spacing="20">
+                <Label Text="Title" VerticalOptions="Start" Style="{StaticResource eventTitle}"/>
+                <Entry Placeholder="Enter the title" Text="{Binding MeetingItem.EventName}"/>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10">
+                        <Label Text="Start Date" VerticalOptions="Center" Style="{StaticResource eventTitle}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="date.png" />
+                            <DatePicker TextColor="DarkGray" x:Name="startDatePicker" Date="{Binding MeetingItem.StartDate}" Style="{StaticResource datePicker}"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout  HorizontalOptions="EndAndExpand" Spacing="10">
+                        <Label Text="End Date" VerticalOptions="Center" Style="{StaticResource eventTitle}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="date.png" />
+                            <DatePicker TextColor="DarkGray" x:Name="end" Date="{Binding MeetingItem.EndDate}" Style="{StaticResource datePicker}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="Enter time in 24 Hour format" TextColor="Red"/>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10">
+                        <Label Text="Start Time" VerticalOptions="Center" Style="{StaticResource eventTitle}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="time.png" />
+                            <Entry Placeholder="Start Time" Text="{Binding MeetingItem.StartTime}" TextColor="DarkGray"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout  HorizontalOptions="EndAndExpand" Spacing="10">
+                        <Label Text="End Time" VerticalOptions="Center" Style="{StaticResource eventTitle}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="time.png" />
+                            <Entry Placeholder="End Time" Text="{Binding MeetingItem.EndTime}" HorizontalOptions="EndAndExpand" TextColor="DarkGray"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
 
-            <Label Text="Event Info:" />
+                <Label Text="Event Info:" Style="{StaticResource eventTitle}"/>
                 <Editor HeightRequest="150" Text="{Binding MeetingItem.EventDetail}" />
-            
-            <Picker Title="Choose meeting type" ItemsSource="{Binding MeetingTypeList}" 
-                    SelectedIndex="{Binding SelectedMeetingIndex}">                
-            </Picker>
-            
-            <Button Text="Submit" Command="{Binding SubmitCommand}"/>
 
-        </StackLayout>
-            </ScrollView>
+                <Picker Title="Choose meeting type" ItemsSource="{Binding MeetingTypeList}"
+                    SelectedIndex="{Binding SelectedMeetingIndex}" TextColor="DarkGray">
+                </Picker>
+
+                <Button Text="Submit" Command="{Binding SubmitCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
