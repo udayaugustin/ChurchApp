@@ -3,19 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Church.StoryList">
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding StoryList}" HasUnevenRows="True">
+        <ListView ItemsSource="{Binding StoryList}" HasUnevenRows="True" HorizontalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Margin="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Frame CornerRadius="10" OutlineColor="Red" Grid.Row="0" Grid.Column="0" >
-                                <Grid >
+                        <Frame Margin="0,5,0,5" HorizontalOptions="FillAndExpand" CornerRadius="10" HasShadow="True" OutlineColor="Gray">
+                                <Grid  HorizontalOptions="FillAndExpand" >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
@@ -24,7 +17,6 @@
                                     <Label Text="{Binding Content}" Grid.Row="1"></Label>
                                 </Grid>
                             </Frame>
-                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
