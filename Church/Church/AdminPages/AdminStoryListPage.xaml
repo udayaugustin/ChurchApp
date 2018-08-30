@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:AdminMenu xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church.AdminStoryListPage"
+             x:Name="AdminStoryListPage"
+             xmlns:local="clr-namespace:Church;assembly=Church">
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding StoryList}" HasUnevenRows="True" HorizontalOptions="FillAndExpand"
+                  ItemSelected="listView_ItemSelected"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Edit" 
+                                          Command="{Binding Path=BindingContext.EditCommand, Source={x:Reference Name=AdminStoryListPage}}" 
+                                          CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Delete" IsDestructive="True" 
+                                          Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference Name=AdminStoryListPage}}"
+                                          CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                        <Frame Margin="0,5,0,5" HorizontalOptions="FillAndExpand" CornerRadius="10" HasShadow="True" OutlineColor="Gray">
+                            <Grid  HorizontalOptions="FillAndExpand" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding Title}" Grid.Row="0"></Label>
+                                <Label Text="{Binding Content}" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</local:AdminMenu>

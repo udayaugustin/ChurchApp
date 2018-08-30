@@ -37,11 +37,15 @@
     <Compile Include="AdminPages\AdminMeetingPage.xaml.cs">
       <DependentUpon>AdminMeetingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdminPages\AdminStoryListPage.xaml.cs">
+      <DependentUpon>AdminStoryListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdminPages\Stories.xaml.cs">
       <DependentUpon>Stories.xaml</DependentUpon>
     </Compile>
     <Compile Include="AdminViewModel\AddStoryViewModel.cs" />
     <Compile Include="AdminViewModel\AdminMeetingsViewModel.cs" />
+    <Compile Include="AdminViewModel\AdminStoryListViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -211,6 +215,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdminPages\Stories.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminPages\AdminStoryListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
