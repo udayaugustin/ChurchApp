@@ -10,7 +10,6 @@ namespace Church
 {
     public class AdminStoryListViewModel : StoryViewModel
     {
-        private Service service;
         private IPageService pageService;
 
         public ICommand EditCommand { get; set; }
@@ -20,7 +19,7 @@ namespace Church
         {
             this.pageService = pageService;
             EditCommand = new Command<Story>(async story => await GoToStoryEditView(story));
-            //DeleteCommand = new Command<Meeting>(async story => await DeleteStory(story));
+            DeleteCommand = new Command<Story>(async story => await DeleteStory(story));
         }
 
         private async Task GoToStoryEditView(Story story)
@@ -28,9 +27,10 @@ namespace Church
             await pageService.PushAsync(new Stories(story));
         }
 
-        //private async Task DeleteStory(Story story)
-        //{
-        //    await service.DeleteMeetingAsync(story);
-        //}
+        private async Task DeleteStory(Story story)
+        {
+            StoryList.Remove(story);
+            await service.DeleteStoryAsync(story);
+        }
     }
 }

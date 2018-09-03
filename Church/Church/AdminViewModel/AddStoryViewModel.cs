@@ -21,7 +21,15 @@ namespace Church
 
         private async Task SubmitAsync()
         {
-            await service.AddStory(StoryItem);
+            if (StoryItem.Id != 0)
+            {
+                await service.UpdateStory(StoryItem);
+            }
+            else
+            {
+                await service.AddStory(StoryItem);
+            }
+                
             await pageService.PopAsync();
         }
     }

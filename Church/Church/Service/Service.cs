@@ -62,10 +62,22 @@ namespace Church
             await client.PostAsync(baseUrl + storyQuery + addAction, new StringContent(content));
         }
 
+        public async Task UpdateStory(Story storyItem)
+        {
+            var content = JsonConvert.SerializeObject(storyItem);
+            await client.PostAsync(baseUrl + storyQuery + updateAction, new StringContent(content));
+        }
+
+        public async Task DeleteStoryAsync(Story storyItem)
+        {
+            var content = JsonConvert.SerializeObject(storyItem);
+            await client.PostAsync(baseUrl + storyQuery + deleteAction, new StringContent(content));
+        }
+
         public async Task<ObservableCollection<Story>> GetStories()
         {
             var content = await client.GetStringAsync(baseUrl + storyQuery + selectAction);
-            
+
             return JsonConvert.DeserializeObject<ObservableCollection<Story>>(content);
         }
     }

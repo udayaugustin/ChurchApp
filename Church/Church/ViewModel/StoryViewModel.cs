@@ -13,7 +13,7 @@ namespace Church
     public class StoryViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Story> _storyList { get; set; }
-        private Service service = new Service();
+        public Service service = new Service();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
